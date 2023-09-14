@@ -7,10 +7,8 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
   <link href="styles.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
   <title>Lucas Blog</title>
 </head>
 
@@ -23,16 +21,16 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#">Lucas Devlog</a>
+          <a class="navbar-brand text-light" href="#">Lucas Devlog</a>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/about">About me</a>
+              <a class="nav-link active text-light" aria-current="page" href="/about">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/links">Links</a>
+              <a class="nav-link text-light" href="/links">Links</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link text-light disabled" aria-disabled="true">Disabled</a>
             </li>
           </ul>
         </div>
@@ -40,9 +38,9 @@
     </nav>
   </header>
   <div class="container-fluid">
-    <div class="row aling-items-center justify-content-center">
-      <div class="hero col-9 col-md-8 shadow-lg mb-5 bg-body-tertiary rounded text-center">
-        <h3>Welcome to my Devlog</h3>
+    <div class="row justify-content-center">
+      <div class="hero col-9 col-md-8 rounded text-light">
+        <h3 class="text-center p-2">Welcome to my Devlog</h3>
         <div class="container col-12 col-md-9 mt-2">
           <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -66,16 +64,63 @@
             </button>
           </div>
         </div>
-        <hr>
-        <div class="container col-12 col-md-8">
+        <div class="container col-12 col-md-9">
+          <hr>
           <h5>Lorem ipsum dolor sit amet.</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, doloremque? Unde, perspiciatis. Deleniti animi placeat dolores id consectetur sequi, itaque aliquam praesentium! Aspernatur ad ullam tempore dolore quidem reiciendis saepe, provident aliquid nisi officia aut vitae velit qui nulla eveniet sequi ea accusantium veritatis debitis culpa consequatur. Vel, odit temporibus?</p>
+          <hr>
+        </div>
+        <!--Cards de proyectos-->
+        <div class="container col-12 col-md-9">
+          <h3 class="text-center">API CRUD</h3>
+          <div class="card text-left mb-2">
+            <img class="card-img-top" src="images/proyecto-1.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Task Manager <i class="bi bi-github"></i></h4>
+              <h6>June 2023</h6>
+              <p class="card-text"></p>
+            </div>
+          </div>
+          <p>This project was my first app, a page where you can create, read, update and delete tasks, is synchronized to the database. It took me more than 1 week to finish it since I did not have much knowledge about what I needed, Mongo and asynchronous functions for example.</p>
+          <p>To finish this project I had to help myself with guides, it was not 100% merit of the guides since I took a lot of knowledge of this project.</p>
+          <hr>
+        </div>
+        <div class="container col-12 col-md-9">
+          <h3 class="text-center">Login app</h3>
+          <div class="card text-left mb-2">
+            <img class="card-img-top" src="images/proyecto-2.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Login App <i class="bi bi-github"></i></h4>
+              <h6>July 2023</h6>
+              <p class="card-text">An app with session persistence, authentication, password hashing and account persisntence.</p>
+            </div>
+          </div>
+          <p>This project took me less than 1 day to do, reading <a href="https://www.passportjs.org/docs/">documentation</a> and tutorials I could get it, since I had no knowledge of the logic that has a login, learn from scratch that is hashing, serialize, authenticate, save passwords and compare them withThe hash to log in to an account was a rewarding experience.</p>
+          <p>The design is a bit poor, this is because I do not know much about design, I wanted to make it a little more "intuitive", I will give it a better design, very soon...</p>
+          <p>At that time, only available on localhost, I will put some instructions in the README file to make it easier to test.</p>
+          <hr>
+        </div>
+        <div class="container col-12 col-md-9">
+          <h3 class="text-center">FILMS Database Proyect</h3>
+          <div class="card text-left mb-2">
+            <img class="card-img-top" src="images/proyecto-3.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">FILMS Database Proyect <i class="bi bi-github"></i></h4>
+              <h6>August 2023</h6>
+              <p class="card-text">A website, which receives forms and receives data about films.</p>
+            </div>
+          </div>
+          <p>In this project I used an external api that returned a JSON file when I sent a query, this I did with the promises of Axios.</p>
+          <p>I plan to add a login and a database, in which, an account will be hosted and movies can be added to favorites, views, to see, etc.</p>
+          <hr>
         </div>
       </div>
     </div>
-    <div class="row">
-      
-    </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
