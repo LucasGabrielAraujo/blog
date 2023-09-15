@@ -6,12 +6,12 @@ const getIndex = (req, res) => {
     const filePath = path.join(__dirname, '..', 'public', 'index.html');
     res.status(200).sendFile(filePath)
 }
-const getSobreMi = (req, res) => {
-    const filePath = path.join(__dirname, '..', 'public', 'about.html');
+const getPlayground = (req, res) => {
+    const filePath = path.join(__dirname, '..', 'public', 'playground.html');
     res.status(200).sendFile(filePath)
 }
 const getLinks = (req, res) => {
     res.status(200).json({ mensaje: "Agregar links" })
 }
 
-module.exports = { getIndex, getSobreMi, getLinks }
+module.exports = { getIndex, getPlayground, getLinks }
